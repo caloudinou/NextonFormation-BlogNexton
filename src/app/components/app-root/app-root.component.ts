@@ -7,11 +7,19 @@ import { Link } from '../../common/interfaces/link';
   styleUrls: ['./app-root.component.css']
 })
 export class AppRootComponent {
-  private name: undefined|string = 'app';
+  private _name: undefined|string = 'app';
   public title: undefined|string = `Welcome to ${this.name}!!`;
   public links: undefined|Link[] = [
     {url:'https://angular.io/tutorial', title:'Tour of Heroes'},
     {url:'https://github.com/angular/angular-cli/wiki', title:'CLI Documentation'},
     {url:'http://angularjs.blogspot.ca/', title:'Angular blog'}
   ];
+
+  get name(): any | string {
+    return this._name;
+  }
+
+  set name(value: any | string) {
+    this._name = value;
+  }
 }
