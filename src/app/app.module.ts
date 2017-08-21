@@ -10,6 +10,7 @@ import { NgModule } from '@angular/core';
 import { AppRootComponent } from './components/app-root/app-root.component';
 import { AppMainComponent } from './components/app-main/app-main.component';
 import { AppOfTestComponent } from './components/app-of-test/app-of-test.component';
+import { HeaderComponent } from './components/header/header.component';
 /**
  * Services
  */
@@ -39,7 +40,8 @@ import { ActiveUserGuard } from './common/guards/active-user.guard';
   declarations: [
     AppMainComponent,
     AppRootComponent,
-    AppOfTestComponent
+    AppOfTestComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
