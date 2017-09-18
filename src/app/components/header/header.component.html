@@ -1,3 +1,13 @@
-<p>
-  header works!
-</p>
+<a>
+  <img *ngIf="logoUrl" [src]="logoUrl" [alt]="logoTitle">
+  <span *ngIf="!logoUrl" [innerHTML]="logoTitle"></span>
+</a>
+
+<ul>
+  <li *ngFor="let link of links">
+    <a [href]="link.url"
+       [innerHTML]="link.title"
+       [ngClass]="{'first': true, 'second': true, 'third': false}"
+    ></a>
+  </li>
+</ul>

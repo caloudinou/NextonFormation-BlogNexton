@@ -9,7 +9,6 @@ export class AppOfTestComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

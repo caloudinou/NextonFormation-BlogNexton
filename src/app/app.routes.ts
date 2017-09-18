@@ -13,6 +13,7 @@ import { AppOfTestComponent } from './components/app-of-test/app-of-test.compone
  * Guards
  */
 import { ActiveUserGuard } from "./common/guards/active-user.guard";
+import {ContactComponent} from "./components/contact/contact.component";
 
 const routesParams: Routes = [
   {
@@ -35,6 +36,17 @@ const routesParams: Routes = [
   {
     path: '',
     redirectTo: '/test',
+    pathMatch: 'full'
+
+  },
+  /**
+   * redirect (contact)
+   * RootUrl to The store Path
+   */
+  {
+    path: '',
+    component: ContactComponent,
+    redirectTo: '/contact',
     pathMatch: 'full'
 
   },

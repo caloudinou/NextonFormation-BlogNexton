@@ -34,6 +34,7 @@ import { ROUTES } from './app.routes';
  * Guards
  */
 import { ActiveUserGuard } from './common/guards/active-user.guard';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ActiveUserGuard } from './common/guards/active-user.guard';
     AppMainComponent,
     AppRootComponent,
     AppOfTestComponent,
-    HeaderComponent
+    HeaderComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
