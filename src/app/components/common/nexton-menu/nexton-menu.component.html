@@ -1,0 +1,7 @@
+<nav>
+  <a *ngFor="let menu of listMenu"
+     [innerHTML]="menu.title"
+     [routerLink]="[menu.path]"
+     [routerLinkActive]="'active-link'"
+  ></a>
+</nav>

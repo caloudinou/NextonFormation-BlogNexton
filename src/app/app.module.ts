@@ -33,13 +33,19 @@ import { ROUTES } from './app.routes';
  * Guards
  */
 import { ActiveUserGuard } from './common/guards/active-user.guard';
+import { AppHeaderComponent } from './components/app-header/app-header.component';
+import { NextonLogoComponent } from './components/common/nexton-logo/nexton-logo.component';
+import { NextonMenuComponent } from './components/common/nexton-menu/nexton-menu.component';
 
 
 @NgModule({
   declarations: [
     AppMainComponent,
     AppRootComponent,
-    AppOfTestComponent
+    AppOfTestComponent,
+    AppHeaderComponent,
+    NextonLogoComponent,
+    NextonMenuComponent
   ],
   imports: [
     BrowserModule,
